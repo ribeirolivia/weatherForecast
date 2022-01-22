@@ -27,7 +27,7 @@ const Weather = () => {
   };
 
   return (
-    <div className='container'>
+    <div className='container pt-4'>
       <Card >
         <Card.Header className="text-center" as="h5">Previsão do tempo na sua cidade</Card.Header>
         <Card.Body  className='d-flex justify-content-center'>
