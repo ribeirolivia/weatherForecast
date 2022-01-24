@@ -1,0 +1,13 @@
+
+.div-app {
+    height: 100vh;
+    background-color: #dee2e6f8;
+
+}
+
+.card {
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.644);
+    box-shadow: 6px 4px 12px 1px #89b5ee7a;
+
+}

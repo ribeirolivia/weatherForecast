@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import { Card, Form, Button } from "react-bootstrap";
+import '../../Style.css';
 
 const Weather = () => {
   const [city, setCity] = useState("");
@@ -27,8 +28,8 @@ const Weather = () => {
   };
 
   return (
-    <div className='container pt-4'>
-      <Card >
+    <div className='container pt-4 w-75'>
+      <Card className='card'>
         <Card.Header className="text-center" as="h5">Previsão do tempo na sua cidade</Card.Header>
         <Card.Body  className='d-flex justify-content-center'>
           
@@ -49,7 +50,7 @@ const Weather = () => {
             <img  alt={weatherForecast.current.condition.text} src={weatherForecast.current.condition.icon}/>
             </div>
             <Card.Text className="text-center">
-                Clima agora na cidade {city} está: {weatherForecast.current.condition.text}
+                Clima agora na cidade {weatherForecast.location.name}/{weatherForecast.location.region} está: {weatherForecast.current.condition.text}
             </Card.Text>
             <Card.Text className="text-center">
                 Temperatura atual:{weatherForecast.current.temp_c}°C
